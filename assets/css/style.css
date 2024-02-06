@@ -1,0 +1,256 @@
+html {
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+/*Resetear todos los valores de margin en el body a 0*/
+body {
+  margin: 0rem;
+}
+
+/*Desactivar decoraciones y colores en los links*/
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+/*Agregar color al hacer hover en los links*/
+a:hover {
+  color: #019ede;
+}
+
+/*Animacion al hacer hover en los links*/
+a {
+  transition: 0.45s ease;
+}
+
+/*Configuración de la barra de anuncio*/
+.anuncio {
+  padding: 0.4rem;
+  background-color: rgb(23, 152, 164);
+  text-align: center;
+  color: #5c5c5c;
+  font-size: 0.875rem;
+  font-family: "Oswald", sans-serif;
+}
+
+a.anuncio {
+  text-decoration: underline; /*Subrayado*/
+}
+
+/*Configuración del logo*/
+header {
+  padding: 0.5rem;
+  text-align: center;
+}
+
+/*Configuración de la barra de navegación*/
+nav {
+  text-align: center;
+  color: #ffffff;
+  font-size: 0.875rem;
+  font-family: "Oswald", sans-serif;
+  background-color: rgb(0, 0, 0);
+  padding: 0.3rem;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav li {
+  display: inline-block;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+nav a {
+  font-size: 1rem;
+}
+
+/*Configuración sección de bienvenida*/
+.bienvenida {
+  text-align: center;
+}
+
+/*Colocar imagen como fondo*/
+.section-bienvenida {
+  background-image: url(../img/fondo.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 5rem;
+}
+
+h2.bienvenida {
+  font-size: 3rem;
+  margin-bottom: 2.5rem;
+}
+
+p.bienvenida {
+  font-size: 1.3rem;
+  margin-bottom: 3rem;
+}
+
+/*Configuracion de todos los link tipo botones (mas info, comprar)*/
+.section-boton {
+  font-size: 1rem;
+  margin-top: 2rem;
+  padding: 0.75rem;
+  background: #f3f3f3;
+  border: 0.125rem solid #f3f3f3;
+  border-radius: 0.5rem;
+}
+
+/*Configuración de la secion de servicios*/
+.servicios {
+  background-color: rgb(23, 152, 164);
+  padding-bottom: 2rem;
+}
+
+h2.servicios {
+  text-align: center;
+  font-size: 2.5rem;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  margin-top: 0rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.contenedor-servicios {
+  text-align: center;
+}
+
+.contenedor-servicios ul {
+  list-style-type: none;
+  padding: 0rem;
+}
+
+.contenedor-servicios li {
+  display: inline-block;
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
+}
+
+.imagen-servicio {
+  border-radius: 1rem;
+  height: 18rem;
+  width: 18rem;
+}
+
+/*Animacion de las imagenes de servicios*/
+img.imagen-servicio {
+  transition: 0.5s ease;
+  box-shadow: 0rem 0.25rem 0.5rem 0rem rgba(0, 0, 0, 0.2),
+    0rem 0.4rem 1.25rem 0rem rgba(0, 0, 0, 0.19);
+}
+
+img.imagen-servicio:hover {
+  transform: scale(1.05);
+}
+
+p.texto-servicio {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+/*Configuración testimonial*/
+.testimonial-contenedor {
+  padding: 3rem;
+  background-color: #222222;
+}
+
+.testimonial h3 {
+  font-size: 1.7rem;
+  font-weight: 400;
+  font-style: italic;
+  color: #ffffff;
+}
+
+.testimonial p {
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+.contenedor-mapa {
+  width: 100%;
+}
+
+/*Configuración footer*/
+footer {
+  font-size: 0.8rem;
+  padding-top: 1rem;
+  text-align: center;
+  background-color: #f3f3f3;
+}
+
+.contenedor-redes .contenedor-pagos {
+  text-align: center;
+}
+
+.contenedor-redes ul {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  padding: 0;
+  list-style-type: none;
+}
+
+.contenedor-redes li {
+  display: inline-block;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 1.3rem;
+}
+
+.margin-primer p {
+  margin-top: 0;
+  margin-bottom: 0.1rem;
+}
+
+.margin-segundo p {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.contenedor-texto-footer a {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.contenedor-pagos ul {
+  list-style-type: none;
+  padding: 0rem;
+  margin-bottom: 0rem;
+}
+
+.contenedor-pagos li {
+  display: inline-block;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 1.2rem;
+}
+
+.volver-arriba {
+  position: fixed;
+  bottom: 1.8rem;
+  right: 1.8rem;
+  padding: 0.6rem 0.9rem;
+  background-color: rgba(0, 0, 0, 0.5); /* Color de fondo con transparencia */
+  backdrop-filter: blur(0.3rem);
+  color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.5s ease 0s;
+}
+
+.volver-arriba:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+}

@@ -1,0 +1,317 @@
+<!DOCTYPE html
+<html lang="es">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+
+    <!-- CSS -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="assets/css/pedido.css" rel="stylesheet" />
+
+    <!-- FA -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Pedido - Libreria Squadra</title>
+  </head>
+  <body>
+    <!-- Barra de anuncio -->
+    <section class="anuncio">
+      <a class="anuncio" href="pedido.html"
+        >ENVÍOS GRATUITOS EN BELL VILLE EN COMPRAS SUPERIORES A $5000 - 3 CUOTAS
+        SIN INTERÉS</a
+      >
+    </section>
+
+    <!-- Título principal -->
+    <header>
+      <a href="index.html" id="titulo-logo">
+        <img src="assets/img/logo2.png" height="200" alt="" />
+      </a>
+      <p>~ Grafica ~ Serigrafia ~ Sellos ~ Grabados ~</p>
+    </header>
+
+    <!-- Barra de navegación -->
+    <nav>
+      <ul>
+        <a href="index.html"><li>Inicio</li></a>
+        <a href="sobre.html"><li>Sobre nosotros</li></a>
+        <a href="pedido.html"><li>Hacer pedido</li></a>
+        <a href="galeria1.html"><li>Galería</li></a>
+        <a href="contacto.html"><li>Contactanos</li></a>
+      </ul>
+    </nav>
+
+    <section class="contenedor">
+      <section class="contenedor-pedido">
+        <article>
+          <h2 class="titulo">1. Elige los productos</h2>
+        </article>
+
+        <form>
+          <article>
+            <h4>Sellos</h4>
+            <select name="portaminas" id="portaminas">
+              <option selected disabled hidden>
+                ELegir sello
+              </option>
+              <option value="Pm1">Sello printy 9511 ($10.200)</option>
+              <option value="Pm2">Sello printy 4911 ($14.650)</option>
+              <option value="Pm3">Sello printy 9412 ($7.980)</option>
+              <option value="Pm4">Sello profesional 5460 ($22.350)</option>
+              <option value="Pm5">Sello printy 9511 ($8.500)</option>
+              <option value="Pm6">Sello clasicc 1117 ($20.120)</option>
+            </select>
+
+            <article class="unidades">
+              <input type="radio" name="udPm" value="1ud" id="Pm1Ud" />
+              <label for="ud">1 Ud.</label>
+              <input type="radio" name="udPm" value="10uds" id="Pm10Ud" />
+              <label for="ud">5 Uds. (- 5%)</label>
+              <input type="radio" name="udPm" value="20uds" id="Pm20Ud" />
+              <label for="ud">10 Uds. (- 10%)</label>
+            </article>
+          </article>
+
+          <article>
+            <h4>Serigrafía en bolsas</h4>
+            <select name="calculadoras" id="calculadoras">
+              <option selected disabled hidden>
+               Elegir bolsa
+              </option>
+              <option value="Casio">Bolsa 40 x 50  ($13.780)</option>
+              <option value="TI">Bolsa 20 x 30 ($8.410)</option>
+              <option value="Sharp">Bolsa 50 x 30 ($11.340)</option>
+            </select>
+
+            <article class="unidades">
+              <input type="radio" name="udCalc" value="1ud" id="Calc1Ud" />
+              <label for="ud">45 Ud.</label>
+              <input type="radio" name="udCalc" value="10uds" id="Calc10Ud" />
+              <label for="ud">80 Uds. (- 5%)</label>
+              <input type="radio" name="udCalc" value="20uds" id="Calc20Ud" />
+              <label for="ud">180Uds. (- 10%)</label>
+            </article>
+          </article>
+
+          <article>
+            <h4>Remitos</h4>
+            <select name="eco" id="eco">
+              <option selected disabled hidden>
+                Elegir remito 
+              </option>
+              <option value="Eco1">Remito original 50 hojas ($6.790)
+              </option>
+              <option value="Eco2">Remito duplicado 50 hojas ($10.320)
+              </option>
+            <option value="Eco3">Remito triplicado 50 hojas ($14.120)
+              </option>
+
+            </select>
+
+            <article class="unidades">
+              <input type="radio" name="udEco" value="1ud" id="Eco1Ud" />
+              <label for="ud">1 Ud.</label>
+              <input type="radio" name="udEco" value="10uds" id="Eco10Ud" />
+              <label for="ud">10 Uds. (- 5%)</label>
+              <input type="radio" name="udEco" value="20uds" id="Eco20Ud" />
+              <label for="ud">15 Uds. (- 10%)</label>
+            </article>
+          </article>
+
+          <button
+            onclick="imprimirSubTotal()"
+            class="boton-carrito"
+            type="button"
+          >
+            Agregar al carrito
+          </button>
+          <button
+            onclick="borrarSeleccionCarrito()"
+            type="button"
+            class="boton-carrito"
+          >
+            Borrar selección
+          </button>
+          <button onclick="vaciarCarrito()" type="button" class="boton-carrito">Vaciar carrito</button>
+        </form>
+      </section>
+
+      <section class="contenedor-datos">
+        <article>
+          <h2 class="titulo">2. Ingresa tus datos</h2>
+        </article>
+
+        <article>
+          <form>
+            <input
+              id="nombre"
+              class="dato-personal"
+              type="text"
+              name="nombre"
+              placeholder="Nombre*"
+              required
+            />
+            <input
+              id="apellido"
+              class="dato-personal"
+              type="text"
+              name="apellido"
+              placeholder="Apellido*"
+              required
+            />
+            <select
+              id="provincia"
+              class="dato-personal"
+              name="provincia"
+              required
+            >
+              <option selected disabled hidden>Provincia*</option>
+              <option value="Buenos Aires">Buenos Aires</option>
+              <option value="Ciudad Autónomas de Buenos Aires">
+                Ciudad Autónomas de Buenos Aires
+              </option>
+              <option value="Catamarca">Catamarca</option>
+              <option value="CHA">Chaco</option>
+              <option value="CHU">Chubut</option>
+              <option value="CBA">Córdoba</option>
+              <option value="CBA">Corrientes</option>
+              <option value="ER">Entre Ríos</option>
+              <option value="FOR">Formosa</option>
+              <option value="JU">Jujuy</option>
+              <option value="LP">La Pampa</option>
+              <option value="LR">La Rioja</option>
+              <option value="ME">Mendoza</option>
+              <option value="MI">Misiones</option>
+              <option value="NE">Neuquén</option>
+              <option value="RN">Río Negro</option>
+              <option value="SA">Salta</option>
+              <option value="SJ">San Juan</option>
+              <option value="SL">San Luis</option>
+              <option value="SC">Santa Cruz</option>
+              <option value="SF">Santa Fe</option>
+              <option value="SE">Santiago del Estero</option>
+              <option value="TDF">Tierra del Fuego</option>
+              <option value="TU">Tucumán</option>
+            </select>
+            <input
+              id="ciudad"
+              class="dato-personal"
+              type="text"
+              name="ciudad"
+              placeholder="Ciudad*"
+              required
+            />
+            <input
+              id="direccion"
+              class="dato-personal"
+              type="text"
+              name="direccion"
+              placeholder="Dirección*"
+              required
+            />
+            <input
+              id="codigoPostal"
+              class="dato-personal"
+              type="number"
+              name="cp"
+              placeholder="Código Postal*"
+              min="1000"
+              max="9999"
+              required
+            />
+
+            <button class="boton-datos" type="button" onclick="valuarEntrada()">
+              Confirmar
+            </button>
+          </form>
+        </article>
+      </section>
+
+      <section class="contenedor-checkout">
+        <article>
+          <h2>3. Hacer el pago</h2>
+        </article>
+
+        <article>
+          <h4>¿Tenés un cupón de descuento?</h4>
+          <form>
+            <input  id="campo-descuento" type="text" name="codigo" placeholder="Ej.: DESCUENTO10" />
+            <button onclick="aplicarDescuento()" id="descuento" class="boton-cupon" type="button">Aplicar</button>
+          </form>
+        </article>
+
+        <article>
+          <h4>Total de su compra</h4>
+          <article class="envio montos" id="envio"><p>Envio: $</p></article>
+          <article class="subtotal montos" id="subTotal">
+            <p>Subtotal: $</p>
+          </article>
+          <article class="total montos"><p id="total">Total: $</p></article>
+        </article>
+
+        <article>
+          <h4>¿Cómo va a pagar?</h4>
+        </article>
+
+        <article class="medios-pago">
+          <form>
+            <input id="gpay"  class="medio" type="radio" name="pago" />
+            <i class="fa-brands fa-google-pay medio"></i>
+            <input id="apay"  class="medio" type="radio" name="pago" />
+            <i class="fa-brands fa-apple-pay medio"></i>
+          </form>
+
+          <button onclick="comprar()" class="boton-comprar" type="button">Comprar</button>
+        </article>
+      </section>
+      <script src="assets/js/pedido.js"></script>
+    </section>
+
+    <footer>
+      <section class="contenedor-redes">
+        <ul>
+          <li>
+            <a href="https://www.facebook.com/graficaboerr.boerr" target="_blank">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.instagram.com/feliboerr?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </li>
+
+          <li>
+            <a href="mailto:Graficaboerr@graficaboerr.com.ar" target="_blank">
+              <i class="fa-regular fa-envelope"></i>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      
+    </footer>
+
+  </body>
+</html>

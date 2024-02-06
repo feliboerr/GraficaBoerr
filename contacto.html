@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+
+    <!-- CSS -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="assets/css/contacto.css" rel="stylesheet" />
+
+    <!-- FA -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- JS -->
+
+    <title>Contacto - Libreria Squadra</title>
+  </head>
+
+  <body>
+    <!-- Barra de anuncio -->
+    <section class="anuncio">
+    </section>
+
+    <!-- Título principal -->
+    <header>
+      <a href="index.html" id="titulo-logo">
+        <img src="assets/img/logo2.png" height="200" alt="" />
+      </a>
+      <p>~ Grafica ~ Serigrafia ~ Sellos ~ Grabados ~</p>
+    </header>
+
+    <!-- Barra de navegación -->
+    <nav>
+      <ul>
+        <a href="index.html"><li>Inicio</li></a>
+        <a href="sobre.html"><li>Sobre nosotros</li></a>
+        <a href="pedido.html"><li>Hacer pedido</li></a>
+        <a href="galeria1.html"><li>Galería</li></a>
+        <a href="contacto.html"><li>Contactanos</li></a>
+      </ul>
+    </nav>
+
+    <section class="contenedor-form-contacto">
+      <section class="contenedor-texto-form section-individual">
+        <h2 class="titulo-contacto">Nos interesan tus ideas 
+        </h2>
+        <p class="texto-contacto">
+         Por aqui podras dar tu opinion sobre nosotros y tambien sobre nuestro trabajo. 
+         Al igual que podes contactarnos por alguna pregunta sobre nuestros servicios
+         y nosotros nos contactaremos con usted. 
+         Gracias por confiar en Grafica Boerr!!
+        </p>
+      </section>
+
+      <section class="contenedor-formulario section-individual">
+        <form class="formulario-contacto">
+          <input
+            type="text"
+            name="nombre"
+            id="nombre"
+            placeholder="Nombre*"
+            required
+          />
+
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="E-mail*"
+            required
+          />
+
+          <textarea
+            rows="5"
+            id="mensaje"
+            placeholder="Mensaje*"
+            required
+          ></textarea>
+        </form>
+        <section class="contenedor-botones">
+          <button type="button" onclick="borrar()">Borrar</button>
+          <button type="button" onclick="validarEntrada()">Enviar</button>
+          <script src="assets/js/contacto.js"></script>
+        </section>
+      </section>
+    </section>
+
+    <footer>
+      <section class="contenedor-redes">
+        <ul>
+          <li>
+            <a href="https://www.facebook.com/graficaboerr.boerr" target="_blank">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.instagram.com/feliboerr?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </li>
+
+          <li>
+            <a href="mailto:graficabperr@graficaboerr.com.ar" target="_blank">
+              <i class="fa-regular fa-envelope"></i>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+     
+    </footer>
+
+   
+  </body>
+</html>
