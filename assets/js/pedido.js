@@ -23,60 +23,46 @@ function calcularSubTotal() {
   let eco = document.getElementById("eco").value;
 
   // Chequeo de portaminas
-  if (portaminas == "Pm1") {
-    subTotalPm += 5580;
+  if (portaminas == "Sello1") {
+    subTotalPm += 10200;
   }
-  if (portaminas == "Pm2") {
-    subTotalPm += 1638;
+  if (portaminas == "Sello2") {
+    subTotalPm += 14650;
   }
-  if (portaminas == "Pm3") {
-    subTotalPm += 14136;
+  if (portaminas == "Sello3") {
+    subTotalPm += 7980;
   }
-  if (portaminas == "Pm4") {
-    subTotalPm += 5332;
+  if (portaminas == "Sello4") {
+    subTotalPm += 22350;
   }
-  if (portaminas == "Pm5") {
-    subTotalPm += 2852;
+  if (portaminas == "Sello5") {
+    subTotalPm += 9500;
   }
-  if (portaminas == "Pm6") {
-    subTotalPm += 3844;
+  if (portaminas == "Sello6") {
+    subTotalPm += 20120;
   }
-  if (portaminas == "Pm7") {
-    subTotalPm += 6696;
-  }
-  if (portaminas == "Pm8") {
-    subTotalPm += 7688;
-  }
-  if (portaminas == "Pm9") {
-    subTotalPm += 19840;
-  }
+  
 
   // Chequeo calculadoras
-  if (calculadoras == "Casio") {
-    subTotalCalc += 17360;
+  if (calculadoras == "Bolsa1") {
+    subTotalCalc += 13780;
   }
-  if (calculadoras == "TI") {
-    subTotalCalc += 9920;
+  if (calculadoras == "Bolsa2") {
+    subTotalCalc += 8410;
   }
-  if (calculadoras == "Sharp") {
-    subTotalCalc += 13883;
+  if (calculadoras == "Bolsa3") {
+    subTotalCalc += 11340;
   }
 
   //Chequeo eco-friendly
-  if (eco == "Eco1") {
-    subTotalEco += 4464;
+  if (eco == "Remito1") {
+    subTotalEco += 6790;
   }
-  if (eco == "Eco2") {
-    subTotalEco += 2976;
+  if (eco == "Remito2") {
+    subTotalEco += 10320;
   }
-  if (eco == "Eco3") {
-    subTotalEco += 1407;
-  }
-  if (eco == "Eco4") {
-    subTotalEco += 6175;
-  }
-  if (eco == "Eco5") {
-    subTotalEco += 1482;
+  if (eco == "Remito3") {
+    subTotalEco += 14120;
   }
 
   // A partir de aca se calculan las unidades
@@ -110,13 +96,13 @@ function calcularSubTotal() {
     yaIngresoCalc = true;
   }
   if (Calc10Ud) {
-    subTotalCalc *= 10;
+    subTotalCalc *= 80;
     subTotalPm = (95 * subTotalCalc) / 100;
     yaIngresoCalc = true;
   }
   if (Calc20Ud) {
-    subTotalCalc *= 20;
-    subTotalCalc = (90 * subTotalCalc) / 100;
+    subTotalCalc *= 180;
+    subTotalCalc = (80 * subTotalCalc) / 100;
     yaIngresoCalc = true;
   }
 
